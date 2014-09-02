@@ -10,7 +10,7 @@
 # Author: Parth Gupta, email: pgupta@dsic.upv.es
 
 if ( @ARGV != 3 ) {
-	die "\nInsufficient/Improper Arguments.\n\nUsage:\nperl msir14.eval <qrelFile> <runFile> <verbose> \n\n\nOptions\n<verbose>\t0\tPrints only average (over all the queries)\n\t\t1\tPrints querywise scores\n\t\t2\tPrints querywise ranklist and corresponding gold ranklist\n\n";
+	die "\nInsufficient/Improper Arguments.\n\nUsage:\nperl msir14-eval.pl <qrelFile> <runFile> <verbose> \n\n\nOptions\n<verbose>\t0\tPrints only average (over all the queries)\n\t\t1\tPrints querywise scores\n\t\t2\tPrints querywise ranklist and corresponding gold ranklist\n\n";
 }
 
 

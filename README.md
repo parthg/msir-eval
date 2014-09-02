@@ -8,6 +8,11 @@ The script is developed for the purpose to evaluate the runs submitted to Shared
 
 http://research.microsoft.com/en-us/events/fire13_st_on_transliteratedsearch/fire14st.aspx
 
+usage: perl msir14-eval.pl <qrel-file> <run-file> <verbose-level>
+
+sample usage: perl msir14-eval.pl sample_qrel.txt sample_run.txt 0
+
 Author: Parth Gupta, email: pgupta@dsic.upv.es
 
 Copyright (C) 2012, 2013, 2014 Parth Gupta All rights reserved.
+

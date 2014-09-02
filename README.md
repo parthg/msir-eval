@@ -12,6 +12,12 @@ usage: perl msir14-eval.pl <qrel-file> <run-file> <verbose-level>
 
 sample usage: perl msir14-eval.pl sample_qrel.txt sample_run.txt 0
 
+sample usage command should generate following output:
+
+Query                           NDCG@1  NDCG@5  NDCG@10 MAP     MRR     RECALL
+average                         1.0000  0.7871  0.8502  0.7083  1.0000  0.8750
+
+
 Author: Parth Gupta, email: pgupta@dsic.upv.es
 
 Copyright (C) 2012, 2013, 2014 Parth Gupta All rights reserved.

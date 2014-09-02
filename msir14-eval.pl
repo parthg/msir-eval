@@ -35,7 +35,7 @@ my $relTheta = 3;
 # = ("xyz", 1, 
 #    "abc", 1);
 # and so on.. 
-my %extopic = ("english-document-00046.txt",1);
+my %extopic = ("88",1);
 
 my @avg;
 my $avgMAP=0.0, $avgMRR=0.0, $avgREC=0.0;
@@ -61,7 +61,7 @@ while (<QRELS>) {
  	$rel = $cols[3];
  	# stores only non-zero relevance
 	if($rel>0) {
-  		$topics->{$topic}->{$docno} = $rel;
+  		$topics->{$topic}->{$docno} = int($rel);
 	}
  }
 
@@ -78,14 +78,14 @@ while (<RUN>) {
   	if(exists $topics->{$topic}->{$docno}) {
 		$rel = $topics->{$topic}->{$docno};
 	}
-  	$runlist->{$topic}->{$rank} = $rel;
+  	$runlist->{$topic}->{$rank} = int($rel);
  }
 
  
  my @ranklist;
  my %scores;
  
- print "Query\t\t\t\t";
+ print "Query\t\t\t";
  foreach(@N) {
  	print "\tNDCG\@$_";
  }
@@ -100,15 +100,14 @@ while (<RUN>) {
 			if(exists $runlist->{$k1}) {
 				@ranklist=();
 				for my $k2 ( sort{$a <=> $b}  keys  %{$runlist->{ $k1 }} ) {
-					$ranklist[int($k2)] = $runlist->{$k1}->{$k2};  # Note that the ranklist is initialized from the index 1 and not 0.
+					$ranklist[int($k2)] = int($runlist->{$k1}->{$k2});  # Note that the ranklist is initialized from the index 1 and not 0.
 #            				print "$k1\t$k2\t$runlist->{ $k1 }->{ $k2 }\n";
 				}
 				$ranklist[0]=0;
-   			
 				@tlist = values %{$topics->{$k1}};
-				@ilist = sort { $b <=> $a } @tlist;
-#   				print "@ranklist\n";
+				@ilist = sort { $b <=> $a } @tlist;;
   				my @printRanklist = @ranklist[1 .. $#ranklist];
+
 				print "Your Ranklist: @printRanklist\n" if $verbose>=2;
    				print "Gold Ranklist: @ilist\n" if $verbose>=2;
 				@result = getdcg();
@@ -119,7 +118,7 @@ while (<RUN>) {
 				$avgREC+=$rec;
   
 				if(scalar(@result)>1) {
-					print "$k1\t" if $verbose>=1;
+					print "$k1\t\t\t" if $verbose>=1;
 					my $j=0;
 					foreach(@result) {
 						print "\t" if $verbose>=1;

@@ -1,0 +1,12 @@
+1 Q0 doc-id-1.txt 1 0.98
+1 Q0 doc-id-2.txt 2 0.88
+1 Q0 doc-id-3.txt 3 0.78
+1 Q0 doc-id-4.txt 4 0.68
+1 Q0 doc-id-5.txt 5 0.58
+1 Q0 doc-id-7.txt 6 0.48
+2 Q0 doc-id-7.txt 1 0.98
+2 Q0 doc-id-8.txt 2 0.88
+2 Q0 doc-id-9.txt 3 0.78
+2 Q0 doc-id-10.txt 4 0.68
+2 Q0 doc-id-11.txt 5 0.58
+2 Q0 doc-id-12.txt 6 0.48

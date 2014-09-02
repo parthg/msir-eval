@@ -14,7 +14,9 @@ sample usage: perl msir14-eval.pl sample_qrel.txt sample_run.txt 0
 
 sample usage command should generate following output:
 
+
 Query                           NDCG@1  NDCG@5  NDCG@10 MAP     MRR     RECALL
+
 average                         1.0000  0.7871  0.8502  0.7083  1.0000  0.8750
 
 

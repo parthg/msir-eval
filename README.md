@@ -8,17 +8,19 @@ The script is developed for the purpose to evaluate the runs submitted to Shared
 
 http://research.microsoft.com/en-us/events/fire13_st_on_transliteratedsearch/fire14st.aspx
 
-usage: perl msir14-eval.pl <qrel-file> <run-file> <verbose-level>
+* usage: perl msir14-eval.pl <qrel-file> <run-file> <verbose-level>
 
-sample usage: perl msir14-eval.pl sample_qrel.txt sample_run.txt 0
+* sample usage: perl msir14-eval.pl sample_qrel.txt sample_run.txt 0
 
-sample usage command should generate following output:
+	sample usage command should generate following output:
 
 
 Query                           NDCG@1  NDCG@5  NDCG@10 MAP     MRR     RECALL
 
 average                         1.0000  0.7871  0.8502  0.7083  1.0000  0.8750
 
+
+How to get: Either you can fork this github repository or you can simply download the repository as ZIP by clicking "Download ZIP" button.
 
 Author: Parth Gupta, email: pgupta@dsic.upv.es
 

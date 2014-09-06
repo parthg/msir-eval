@@ -27,6 +27,15 @@ Query                           NDCG@1  NDCG@5  NDCG@10 MAP     MRR     RECALL
 average                         1.0000  0.7871  0.8502  0.7083  1.0000  0.8750
 ```
 
+**Verbose levels**
+------------------
+
+There are three verboser levels [0-2]. 
+
+* 0 - It prints the evaluation measures averaged over all queries only.
+* 1 - It prints the evaluation measures for each query and average.
+* 2 - It prints the gold ranklist and the your ranklist for each query in addtion to the info printed in level-1.
+
 **How to get**
 -------------
 

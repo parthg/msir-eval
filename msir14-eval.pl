@@ -35,7 +35,8 @@ my $relTheta = 3;
 # = ("xyz", 1, 
 #    "abc", 1);
 # and so on.. 
-my %extopic = ("8888",1);
+my %extopic = ("96",1,
+    "97",1);
 
 my @avg;
 my $avgMAP=0.0, $avgMRR=0.0, $avgREC=0.0;

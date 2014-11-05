@@ -138,10 +138,24 @@ while (<RUN>) {
 
 					print "\n" if $verbose>=1;
 				}
-			}	
+			}
+			else {
+			  print "$k1\t\t\t" if $verbose>=1;
+			  foreach(@N) {
+			  print "\t" if $verbose>=1;
+          printf '%.4f',0 if $verbose>=1;
+        }
+        print "\t" if $verbose>=1;
+        printf '%.4f',0 if $verbose>=1;
+        print "\t" if $verbose>=1;
+        printf '%.4f',0 if $verbose>=1;
+        print "\t" if $verbose>=1;
+        printf '%.4f',0 if $verbose>=1;
+        print "\n" if $verbose>=1;
+    }
      		
 			
-		}	
+		}
 	}
 	print "average\t\t\t";
 	foreach(@avg) {

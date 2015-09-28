@@ -40,13 +40,13 @@ There are three verboser levels [0-2].
 **Format of files**
 -------------------
 
-* sample_run.txt file is in format (single-space delimited):
+* sample_run.txt (single-space delimited):
 
-<query-id> Q0 <docid> <rank> <similarity-score>
+`<query-id> Q0 <docid> <rank> <similarity-score>`
 
-* sample_qrel.txt file is in format (single-space delimited):
+* sample_qrel.txt (single-space delimited):
 
-<query-id> QO <docid> <relevance-score>
+`<query-id> QO <docid> <relevance-score>`
 
 where, relevance scores are between [0-4] ranging from irrelevant=0 to perfectly relevant=4. 
 
@@ -61,5 +61,5 @@ Either you can fork this github repository or you can simply download the reposi
 Parth Gupta, email: pgupta@dsic.upv.es
 
 
-Copyright (C) 2012, 2013, 2014 Parth Gupta All rights reserved.
+Copyright (C) 2012, 2013, 2014, 2015 Parth Gupta.
 

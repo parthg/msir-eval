@@ -36,6 +36,20 @@ There are three verboser levels [0-2].
 * 1 - It prints the evaluation measures for each query and average.
 * 2 - It prints the gold ranklist and the your ranklist for each query in addtion to the info printed in level-1.
 
+
+**Format of files**
+-------------------
+
+* sample_run.txt file is in format (single-space delimited):
+
+<query-id> Q0 <docid> <rank> <similarity-score>
+
+* sample_qrel.txt file is in format (single-space delimited):
+
+<query-id> QO <docid> <relevance-score>
+
+where, relevance scores are between [0-4] ranging from irrelevant=0 to perfectly relevant=4. 
+
 **How to get**
 -------------
 
